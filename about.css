@@ -1,0 +1,177 @@
+/* Reset and base */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, Sans-serif;
+    background: linear-gradient(135deg, #8b249b, #c65edb 100%);
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 2px dolid #a5b4fc;
+    outline-offset: 2px;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #450757;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #450757;
+    border-radius: 4px;
+}
+
+
+/* Header */
+
+.header {
+    position: sticky;
+    top: 0;
+    height: 64px;
+    backdrop-filter: blur(16px);
+    background: rgba(72, 4, 80, 0.75);
+    box-shadow: 0 2px 8px rgba(0, 0, 0 0.5);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-weight: 900;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    background: linear-gradient(135deg, #e782c8 0%, #d290e7 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+.nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #e2e8f0;
+    transition: background 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    background: rgba(108, 5, 91, 0.3);
+}
+
+header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #560850;
+    background: #af619d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #c493ac;
+}
+
+header h1 span {
+    font-weight: bold;
+    color: #560850;
+}
+
+.hiasan-bunga {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 120px;
+}
+
+.section {
+    background: #af619d;
+    padding: 20px;
+    border-left: 5px solid #ac25a9;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tanggal h2 {
+    font-size: 1.5em;
+    color: #560850;
+    margin-bottom: 10px;
+}
+
+.tanggal img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.tanggal p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #560850;
+}
+
+.tanggal h4 {
+    font-size: 1.0em;
+    color: #560850;
+    margin-bottom: 10px;
+}
+
+.info {
+    background: #af619d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #bbb;
+}
+
+.info h3 {
+    color: #560850;
+}
+
+.info ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
