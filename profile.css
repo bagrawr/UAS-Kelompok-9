@@ -132,6 +132,19 @@ h2 {
     /* Efek bayangan */
 }
 
+.ibukota {
+    width: 300px;
+    /* Atur ukuran lebar gambar */
+    height: auto;
+    /* Tinggi otomatis agar proporsional */
+    border: 3px solid #680562;
+    /* Bingkai hitam dengan ketebalan 3px */
+    border-radius: 8px;
+    /* Sudut bingkai agak melengkung */
+    box-shadow: 2px 2px 8px #b25bb8(0, 0, 0, 0.3);
+    /* Efek bayangan */
+}
+
 p {
     color: #680562;
     border: 3px dashed #910e63;
